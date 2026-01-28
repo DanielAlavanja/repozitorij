@@ -1,0 +1,264 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "DanielAlavanja";
+    src:url("DanielAlavanja.ttf"); /* ukoliko se ttf font ne nalazi u istoj mapi kao i html tada treba navesti i ime_mape/ime_fonta.ttf */
+	}
+
+body {
+    font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    background-color: #f67047;
+}
+
+.body_index{
+    font-family: "Special Gothic Condensed One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    color: #ffffff;
+    background-image: url("slike/bg_pic.jpg");
+    background-size: cover;
+}
+
+header {
+    text-align: start;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.moj_font{
+    font-family: "DanielAlavanja", sans-serif; 
+}
+
+h1{
+    font-size: 32px;
+    padding-bottom: 30px;
+}
+
+h2{
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+header div{
+    background-color: white;
+    width: 40%;
+    height: 45%;
+    color: #122862; 
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+nav {
+    background-color: #122862;
+    height: 20vh;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+nav a{
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+}
+
+img {
+    margin: 10px 0;
+}
+
+.o_meni img{
+    width: 20%;
+    border: #122862 3px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+.o_meni img:hover{
+     transform: scale(1.2);
+    box-shadow:  0 10px 10px 5px  rgb(33, 33, 33, 0.50), 0 10px 10px 5px rgb(33, 33, 33, 0.50);
+}
+
+.o_meni{
+    width: 60%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    color: #122862;
+    border-radius: 15px;
+}
+
+.o_meni h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.o_meni h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.o_meni p{
+    text-align: justify;
+}
+
+.img_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.radovi_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.radovi_div img{
+    width: 25%;
+    border: #122862 3px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+.radovi_div img:hover{
+     transform: scale(1.2);
+    box-shadow:  0 10px 10px 5px  rgb(33, 33, 33, 0.50), 0 10px 10px 5px rgb(33, 33, 33, 0.50);
+}
+
+hr{
+    color: #122862;
+    margin: 50px;
+}
+
+.video_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vjezbe{
+    width: 60%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    color: #122862;
+    border-radius: 15px;
+}
+
+.vjezbe h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.adobe_div img{
+     width: 25%;
+    border: #122862 3px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+.adobe_div img:hover{
+     transform: scale(1.2);
+    box-shadow:  0 10px 10px 5px  rgb(33, 33, 33, 0.50), 0 10px 10px 5px rgb(33, 33, 33, 0.50);
+}
+
+.adobe_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.video{
+    width: 70%;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    color: #122862;
+    border-radius: 15px;
+}
+
+.video_p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video h2{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.v_div{
+    border-right: 3px #122862 solid;
+}
+
+.video_margin{
+    margin-right: 30px;
+}
+
+.p_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video_ul{
+    margin-left: 30px;
+}
